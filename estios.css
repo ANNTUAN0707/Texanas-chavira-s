@@ -180,7 +180,7 @@ footer {
     /* ---- FOTOS ---- */
     .fotos {
         display: grid;               /* usamos grid */
-        grid-template-columns: 1fr 1fr; /* dos columnas */
+        grid-template-columns: 1fr 1fr; /* dos columnas por fila */
         gap: 10px;                   /* espacio entre fotos */
         justify-items: center;
     }
@@ -192,6 +192,8 @@ footer {
     /* ---- VIDEO ---- */
     .video iframe {
         width: 100%;
-        min-height: 400px; /* asegura mas altura */
+        aspect-ratio: 16/9; /* mantiene proporción sin recortar */
+        height: auto;       /* se ajusta según el ancho */
     }
 }
+
