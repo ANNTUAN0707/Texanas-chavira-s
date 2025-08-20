@@ -160,30 +160,48 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .menu {
         flex-direction: column;
         text-align: center;
         width: 100%;
     }
+
     .menu li {
         width: 100%;
     }
+
     .hero p {
         font-size: 1em;
         padding-left: 10%;
         padding-right: 10%;
     }
+
     .hero h1 {
         font-size: 1.5em;
     }
 
+    /* ---- LOGO CENTRADO ---- */
+    .logo {
+        display: flex;
+        justify-content: center; /* centra horizontal */
+        align-items: center;     /* centra vertical si es necesario */
+        width: 100%;
+    }
+
+    .logo img {
+        max-width: 150px; /* opcional para móviles */
+        height: auto;
+    }
+
     /* ---- FOTOS ---- */
     .fotos {
-        display: grid;               /* usamos grid */
+        display: grid;               
         grid-template-columns: 1fr 1fr; /* dos columnas por fila */
-        gap: 10px;                   /* espacio entre fotos */
+        gap: 10px;                     
         justify-items: center;
     }
+
     .fotos img {
         width: 100%;
         height: auto;
@@ -193,7 +211,8 @@ footer {
     .video iframe {
         width: 100%;
         aspect-ratio: 16/9; /* mantiene proporción sin recortar */
-        height: auto;       /* se ajusta según el ancho */
+        height: auto;       
     }
 }
+
 
