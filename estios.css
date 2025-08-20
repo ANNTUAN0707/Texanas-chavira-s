@@ -153,7 +153,8 @@ footer {
     font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: rgb(114, 114, 114);
 }
-/*media para telefonos*/
+
+/* media para telefonos */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -178,23 +179,19 @@ footer {
 
     /* ---- FOTOS ---- */
     .fotos {
-        display: flex;
-        flex-wrap: wrap; /* permite que las imagenes salten de linea */
-        justify-content: center;
+        display: grid;               /* usamos grid */
+        grid-template-columns: 1fr 1fr; /* dos columnas */
+        gap: 10px;                   /* espacio entre fotos */
+        justify-items: center;
     }
     .fotos img {
-        width: 45%;   /* dos por fila, con pequeño margen */
-        margin: 2%;
+        width: 100%;
         height: auto;
-    }
-    .fotos img:hover {
-        flex: 1;
-        transform: scale(1);
     }
 
     /* ---- VIDEO ---- */
     .video iframe {
         width: 100%;
-        height: 400px; /* aqui le das mas altura */
+        min-height: 400px; /* asegura mas altura */
     }
 }
