@@ -179,7 +179,7 @@ footer {
         flex-direction: column;
     }
     .fotos img {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
     .fotos img:hover {
@@ -188,6 +188,6 @@ footer {
     }
     .video iframe {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
